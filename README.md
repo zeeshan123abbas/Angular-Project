@@ -1,27 +1,49 @@
-# Route
+# 🅰️ Angular SSR Routing App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+![Angular](https://img.shields.io/badge/Angular%2018-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-## Development server
+An **Angular 18** application built with standalone components, the Angular Router, and **server-side rendering (SSR)** through an Express server.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ✨ Features
 
-## Code scaffolding
+- 🧭 Client-side **routing** with `app.routes.ts`
+- 🧩 **Standalone components**, no NgModules
+- ⚡ **Server-side rendering** (`server.ts`, `app.config.server.ts`) for faster first load and better SEO
+- 🧪 Unit tests with Karma and Jasmine
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🗂️ Project structure
 
-## Build
+```
+src/app/
+├── app.component.*       Root component and layout
+├── app.routes.ts         Route definitions
+├── app.config.ts         Browser providers
+├── app.config.server.ts  Server providers
+└── my-route/             Example routed component
+server.ts                 Express server for SSR
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ▶️ Getting started
 
-## Running unit tests
+```bash
+git clone https://github.com/zeeshan123abbas/Angular-Project.git
+cd Angular-Project
+npm install
+ng serve        # http://localhost:4200
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+| Command | What it does |
+|---|---|
+| `ng serve` | Dev server with live reload |
+| `ng build` | Production build into `dist/` |
+| `ng test` | Run unit tests |
 
-## Running end-to-end tests
+## 🎓 What you will learn
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+How Angular routing works, how to structure an app with standalone components, and how SSR renders pages on the server.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+👨‍🏫 **Zeeshan Abbas**, Senior Faculty & Manager Academics, Aptech North Nazimabad
